@@ -1,0 +1,309 @@
+:root {
+	--font-primary: 'Fira Sans', 'Helvetica Neue', Verdana, Arial, snas-serif;
+	--font-text: 'Quicksand', 'Helvetica Neue', Verdana, Arial, snas-serif;
+	--color-primary: #30ab9d;
+	--color-seconday: #2c3e50;
+	--color-text: #333;
+	--color-light: #f8f9fa;
+	--color-gray: #515151;
+	--color-danger: #f11414;
+	--shadow-text: 0 0 8px rgba(0, 0, 0, 60%);
+}
+
+/* Default Style  */
+body {
+	font-family: var(--font-text);
+	color: var(--color-text);
+	line-height: 1.65em;
+}
+
+h1, h2, h3, h4 {
+	font-family: var(--font-primary);
+	font-weight: 400;
+}
+
+p {
+	font-size: 1.25rem;
+}
+
+a.btn,
+button.btn {
+	border: none;
+	background-color: var(--color-primary);
+	color: var(--color-light);
+	transition: all 0.3s ease-in-out;
+	font-family: var(--font-primary);
+	font-weight: 500;
+}
+
+a.btn:hover,
+button.btn:hover {
+	background-color: var(--color-danger);
+	text-shadow: var(--shadow-text);
+	color: var(--color-light);
+}
+
+.fullCenter-flexContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.section-heading {
+	font-size: 2.85rem;
+}
+
+/***** Style for Header and Navigation Section *****/
+nav.foodHouseNavbar {
+	background-color: rgba(0, 0, 0, .8);
+	padding: 1.25em 0;
+	transition: all 0.3s ease-in-out;
+}
+
+nav.foodHouseNavbar .navbar-brand {
+	font-family: var(--font-primary);
+	color: var(--color-primary);
+	font-size: 2.15rem;
+	transition: color 0.3s linear;
+}
+
+nav.foodHouseNavbar .navbar-brand:hover {
+	color: var(--color-danger);
+}
+
+nav.foodHouseNavbar .nav-link {
+	font-family: var(--font-primary);
+	color: var(--color-light);
+	font-size: 1.25rem;
+	margin: 0 0.5em;
+	transition: color 0.3s linear;
+}
+
+nav.foodHouseNavbar .nav-link:hover {
+	color: var(--color-danger);
+}
+
+/***** Style for Hero Section *****/
+.hero-section {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url('../images/bg.jpg')   center/cover no-repeat;
+	color: var(--color-light);
+}
+
+.hero-section .bg-mask {
+	width: 100%;
+	height: 85vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 45%);
+}
+
+.hero-content {
+	padding: 2em 0;
+}
+
+.hero-content h1 {
+	font-size: 4rem;
+	margin-bottom: 0.25em;
+	font-weight: 300;
+}
+
+.hero-content h4 {
+	font-size: 1.65rem;
+	margin-bottom: 1.25em;
+	font-weight: 300;
+}
+
+.hero-content .call-to-action {
+	padding: 0.75em 1.85em;
+	font-size: 1.25rem;
+}
+
+
+/***** Style for Abput Section *****/
+.about-section {
+	padding: 5em 0;
+	background-color: var(--color-light);
+}
+
+.about-content p {
+	margin: 1.25em 0;
+}
+
+
+/***** Style for Menu Section *****/
+.menu-section {
+	background-color: var(--color-light);
+	padding: 6em 0;
+}
+
+.menu-section h2 {
+	margin-bottom: 3rem;
+    position: relative;
+    text-align: center;
+}
+
+.menu-section h2::after {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 0.05em;
+    background: var(--color-primary);
+    margin: 0.25em auto 0;
+}
+
+.menu-section .nav-tabs {
+    border: none;
+    margin-bottom: 3em;
+    justify-content: center;
+}
+
+.menu-section .nav-tabs .nav-link {
+	font-family: var(--font-primary);
+    color: var(--color-seconday);
+    border: none;
+    padding: 1em 2.5em;
+    font-size: 1.25rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    background: transparent;
+}
+
+.menu-section .nav-tabs .nav-link:hover {
+    color: var(--color-primary);
+    border: none;
+}
+
+.menu-section .nav-tabs .nav-link.active {
+    color: var(--color-primary);
+    background: none;
+    border: none;
+    border-bottom: 0.15em solid var(--color-primary);
+}
+
+.menu-section .menu-item {
+    margin-bottom: 2.5em;
+    padding: 2em;
+    border-radius: 0.65em;
+    transition: all 0.3s ease;
+    background: var(--color-light);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+}
+
+.menu-section .menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.menu-section .menu-item h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+    font-size: 1.35rem;
+}
+
+.menu-section .menu-item p {
+    color: var(--color-gray);
+    margin-bottom: 0;
+}
+
+.menu-section .menu-item .price {
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+
+/***** Style for Special Item Section *****/
+.special-section {
+    padding: 6em 0;
+}
+
+.special-section h2 {
+    margin-bottom: 2rem;
+}
+
+.special-card {
+    background: var(--color-light);
+    padding: 2rem;
+    border-radius: 1em;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/***** Style for Contact Section *****/
+.contact-section {
+    padding: 6em 0;
+}
+
+.contact-info p {
+    margin-bottom: 1em;
+}
+
+.contact-info i {
+    color: var(--primary-color);
+    margin-right: 1em;
+    width: 1.25em;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 1rem;
+    border: 2px solid var(--color-primary);
+    padding: 0.8rem;
+}
+
+
+/***** Style for Footer Section *****/
+footer.footer {
+    color: var(--color-light);
+    padding: 4em 0 2em;
+}
+
+.social-links a {
+    color: var(--color-light);
+    font-size: 1.5em;
+    margin-right: 1em;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--color-primary);
+}
+
+
+/***** Responsive Style *****/
+@media (max-width: 576px) {
+	.hero-content h1 {
+		font-size: 2.75rem;
+	}
+
+	.hero-content h4 {
+		font-size: 1.35rem;
+	}
+
+	.menu-section .nav-tabs .nav-link {
+		padding: 1em 0.15em;
+	}
+
+	.about-section h2.section-heading {
+		text-align: center;
+	}
+
+	.contact-info,
+	.opening-hours {
+		text-align: center;
+	}
+
+	.sm-margin {
+		margin-top: 1em;
+	}
+
+	.sm-margin-lg {
+		margin-top: 1.5em;
+	}
+}
